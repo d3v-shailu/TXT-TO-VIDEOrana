@@ -37,8 +37,8 @@ bot = Client(
 photo = "https://i.postimg.cc/dVY9nL63/IMG-20250426-130510-655.jpg"
 cpphoto = "https://i.postimg.cc/dVY9nL63/IMG-20250426-130510-655.jpg"
 appxzip = "https://i.postimg.cc/dVY9nL63/IMG-20250426-130510-655.jpg"
-my_name = "𝐑𝐀𝐍𝐀_𝐉𝐈𝐈"
-CHANNEL_ID = "-1002458238039"##change it with your channel 🆔 
+my_name = "D3V_SHAILU"
+CHANNEL_ID = "-1002557558185"##change it with your channel 🆔 
 
 cookies_file_path = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
 
@@ -163,7 +163,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["RANAJII25", "RANA25"]) )
+@bot.on_message(filters.command(["RANAJII25", "RANA25", "D3V_SHAILU"]) )
 async def txt_handler(bot: Client, m: Message):
     await m.delete()
     
@@ -847,8 +847,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\nTitle: {name1} 𝐑𝐀𝐍𝐀 𝐉𝐈𝐈 {res}.mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦📖𝐑𝐀𝐍𝐀_𝐉𝐈𝐈📖✦━━━━━**'
-                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\nTitle: {name1} 𝐑𝐀𝐍𝐀 𝐉𝐈𝐈.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦📖𝐑𝐀𝐍𝐀_𝐉𝐈𝐈 📖✦━━━━━**'
+                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\nTitle: {name1}{res}.mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦📖D3V_SHAILU📖✦━━━━━**'
+                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\nTitle: {name1}.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦📖D3V_SHAILU📖✦━━━━━**'
                     
                 
                 if "drive" in url:
@@ -910,7 +910,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue                       
                           
                 else:
-                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n📝 Title:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𝐑𝐀𝐍𝐀_𝐉𝐈𝐈**"
+                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n📝 Title:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ D3V_SHAILU**"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
